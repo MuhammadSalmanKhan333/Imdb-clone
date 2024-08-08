@@ -11,8 +11,6 @@ export default function NavbarItem({ title, param }) {
   return (
     <div>
       <Suspense fallback={<div>Loading...</div>}>
-        {" "}
-        {/* Add the suspense boundary */}
         <Link
           className={`hover:text-amber-600 font-semibold relative ${
             genre === param ? "active" : ""

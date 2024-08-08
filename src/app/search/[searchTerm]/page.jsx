@@ -7,7 +7,6 @@ export default async function SearchPage({ params }) {
   );
   const data = await res.json();
   const results = data.results;
-  console.log("data", data);
   return (
     <div>
       {results &&

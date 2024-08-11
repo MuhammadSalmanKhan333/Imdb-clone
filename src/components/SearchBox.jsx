@@ -23,7 +23,7 @@ export default function SearchBox() {
         onChange={(e) => setSearch(e.target.value)}
       />
       <button
-        className="bg-[aqua] cursor-pointer rounded-tr-lg rounded-br-md  p-4 text-amber-700 disabled:text-gray-400 disabled:hover:text-purple-600"
+        className="bg-[aqua] cursor-pointer rounded-tr-lg rounded-br-md  p-4 text-[#b032c9] disabled:text-gray-400 disabled:cursor-not-allowed"
         disabled={search === ""}
       >
         Search

@@ -1,13 +1,12 @@
 "use client";
-
-import { Suspense } from "react"; // Import Suspense
+import { Suspense } from "react";
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
+import { useParams, useSearchParams } from "next/navigation";
 
 export default function NavbarItem({ title, param }) {
-  const searchParams = useSearchParams();
-  const genre = searchParams.get("genre");
-
+  // const searchParams = useSearchParams();
+  // const genre = searchParams.get("genre");
+  const { genre } = useParams();
   return (
     <div>
       <Suspense fallback={<div>Loading...</div>}>
